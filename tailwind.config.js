@@ -4,7 +4,16 @@ export default {
     "./src/**/*{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'gradient-1': '#fbf7ff',
+        'gradient-2': '#f5e3ff',
+        'accent': '#8E37F2',
+      },
+      fontFamily: {
+        'sourcesans': ["'Source Sans 3', 'sans-serif'"],
+      },
+    },
   },
   plugins: [],
 }
