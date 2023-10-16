@@ -1,7 +1,18 @@
+import { RequireAuth } from "../contexts/RequireAuth"
 
-const DefaultPage = () => {
+type DefaultPageProps = {
+  children: React.ReactNode
+}
+
+const DefaultPage = ({ children }: DefaultPageProps) => {
   return (
-    <div>DefaultPage</div>
+    <RequireAuth>
+      <div>
+        <h1>Default Page</h1>
+        <p>This page is only visible to authenticated users.</p>
+        {children}
+      </div>
+    </RequireAuth>
   )
 }
 
