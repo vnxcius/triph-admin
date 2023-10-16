@@ -1,7 +1,10 @@
+import DefaultPage from "../components/DefaultPage"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <DefaultPage>
+      <div>Home</div>
+    </DefaultPage>
   )
 }
 
